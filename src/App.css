@@ -1,6 +1,7 @@
 .tam{
-    height: 350px;
-    width: 240px;
+    height: 90%;
+    width: 90%;
+    justify-content: center;
 }
 
 .App {

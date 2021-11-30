@@ -1,18 +1,18 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Cart from '../pages/Cart';
+import Trolley from '../pages/Trolley';
 import Contact from '../pages/Contact';
 import Home from '../pages/Home';
 import Error from '../pages/Error';
-import Navbar from '../components/Navbar';
+import NavbarComponent from '../components/NavbarComponent';
 
 const AppRouter = () => {
     return (
         <BrowserRouter>
-            <Navbar/>
+            <NavbarComponent/>
                 <Switch>
-                    <Route path='/Carrito' component={Cart} />
-                    <Route path='/Contacto' component={Contact} />
+                    <Route path='/Trolley' component={Trolley} />
+                    <Route path='/Contact' component={Contact} />
                     <Route exact path='/' component={Home}/>
                     <Route path='*' component={Error} />
                 </Switch>
